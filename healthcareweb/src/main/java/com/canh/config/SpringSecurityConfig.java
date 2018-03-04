@@ -45,4 +45,6 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .withUser("admin").password("password").roles("ADMIN");
     }
+    
+    
 }
