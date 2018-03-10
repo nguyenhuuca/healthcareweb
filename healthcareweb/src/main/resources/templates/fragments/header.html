@@ -25,7 +25,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-             <a class="navbar-brand"  alt="LOGO">
+             <a class="navbar-brand" th:href="@{http://cijulenlinea.ucr.ac.cr/dev-users/}" >
+               <img src=""></img>
             </a>
         </div>
          <!-- Top Menu Items -->
@@ -50,18 +51,18 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li>
-                    <a  data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a  data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> Bệnh Nhân <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-1" class="collapse">
-                        <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
-                        <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
-                        <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
+                        <li><a th:href="@{/patient}" ><i class="fa fa-angle-double-right"></i>Tạo Mới</a></li>
+                        <li><a ><i class="fa fa-angle-double-right"></i> Kê Toa</a></li>
+                        <li><a ><i class="fa fa-angle-double-right"></i> Tra bệnh án</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a  data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  MENU 2 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <a  data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i> Quản Lý Thuốc <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                     <ul id="submenu-2" class="collapse">
-                        <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
-                        <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
+                        <li><a ><i class="fa fa-angle-double-right"></i> Danh Mục Thuốc </a> </li>
+                        <li><a ><i class="fa fa-angle-double-right"></i> Phiếu Nhập</a></li>
                         <li><a ><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
                     </ul>
                 </li>
@@ -78,7 +79,6 @@
         </div>
         <!-- /.navbar-collapse -->
 	</div>
-
 </body>
 </html>
 <script th:inline="javascript">
